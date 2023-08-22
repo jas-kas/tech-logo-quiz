@@ -1,8 +1,16 @@
 .quiz-container ul .selected-answer {
   background: #ffd6ff;
   border: 1px solid #800080;
+  border-radius: 10px;
 }
 
+.quiz-container ul .unselected-answer {
+  border: 1px solid #fff;
+}
+
+.quiz-container ul li {
+  padding: 30px;
+}
 
 .App {
   text-align: center;
@@ -16,7 +24,30 @@
   padding: 0;
   justify-content: center;
   margin: 60px;
+  cursor: pointer;
 }
+
+.disabledQuizButton {
+  background-color: -internal-light-dark(rgba(239, 239, 239, 0.3), rgba(19, 1, 1, 0.3));
+  color: -internal-light-dark(rgba(16, 16, 16, 0.3), rgba(255, 255, 255, 0.3));
+  border-color: -internal-light-dark(rgba(105, 104, 104, 0.3), rgba(195, 195, 195, 0.3));
+  border-radius: 10px;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.quizButton {
+  background-color: #800080;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
 
 /* Outside curly brackets is our selector. Classname and ID are 'special' names. Target className with "." */
 /* 'li' list tag inside logoPics className */

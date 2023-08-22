@@ -27,7 +27,7 @@ export function Quiz() {
     return (
       <div className="quiz-container">
         <h1>Quiz</h1>
-        <button onClick={onClickStart}>
+        <button onClick={onClickStart} className="quizButton">
           {'Start Now'}
         </button>
       </div>
@@ -109,12 +109,12 @@ export function Quiz() {
               <li
                 onClick={() => onAnswerSelected(answer, index)}
                 key={answer}
-                className={selectedAnswerIndex === index ? 'selected-answer' : null}>
+                className={selectedAnswerIndex === index ? 'selected-answer' : 'unselected-answer'}>
                 <img src={answer} width="200px" />
               </li>
             ))}
           </ul>
-          <button onClick={onClickNext} disabled={selectedAnswerIndex === null}>
+          <button onClick={onClickNext} disabled={selectedAnswerIndex === null} className={selectedAnswerIndex === null ? "disabledQuizButton" : "quizButton"}>
             {activeQuestion === questions.length - 1 ? 'Finish' : 'Next'}
           </button>
         </div>
@@ -128,12 +128,12 @@ export function Quiz() {
     )
   }
 
-  const yourScore = (result.score / questions.length) * 100 + '%'
+  const yourScore = (result.score / questions.length) * 100
   function scoreResult() {
     if (yourScore >= 80) {
       return (
         <p>
-          <h3>{yourScore}</h3>
+          <h3>{yourScore}%</h3>
           <h3>Great job! 😊</h3>
         </p>
       )
@@ -142,7 +142,7 @@ export function Quiz() {
       return (
 
         <p>
-          <h3>{yourScore}</h3>
+          <h3>{yourScore}%</h3>
           <h3>You could aim for a higher score tbh. ⭐ </h3>
         </p>
 
@@ -152,7 +152,7 @@ export function Quiz() {
       return (
 
         <p>
-          <h3>{yourScore}</h3>
+          <h3>{yourScore}%</h3>
           <h3>Oh no. 😔 Better luck next time!</h3>
         </p>
 
@@ -183,7 +183,7 @@ export function Quiz() {
           Wrong Answers:<span> {result.wrongAnswers}</span>
         </p>
 
-        <button onClick={onTryAgain} >Try Again</button>
+        <button onClick={onTryAgain} className="quizButton" >Try Again</button>
 
       </div>
 
