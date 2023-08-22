@@ -6,7 +6,7 @@ import { quiz } from './quizQuestions'
 
 export function Quiz() {
   // React hooks
-  const [activeQuestion, setActiveQuestion] = useState(0)
+  const [activeQuestion, setActiveQuestion] = useState(-1)
   const [selectedAnswer, setSelectedAnswer] = useState('')
   const [selectedAnswerIndex, setSelectedAnswerIndex] = useState(null)
   const [showResult, setShowResult] = useState(false)
@@ -15,6 +15,29 @@ export function Quiz() {
     correctAnswers: 0,
     wrongAnswers: 0,
   })
+
+
+  function onClickStart() {
+    setActiveQuestion(0)
+  }
+
+  // in curly brackets - block
+
+  if (activeQuestion == -1) {
+    return (
+      <div className="quiz-container">
+        <h1>Quiz</h1>
+        <button onClick={onClickStart}>
+          {'Start Now'}
+        </button>
+      </div>
+    )
+
+
+  }
+
+
+
 
   // questions (variable) is an array from quiz variable - see quizQuestions.js 
   const questions = quiz.questions;
@@ -60,7 +83,7 @@ export function Quiz() {
   function onTryAgain() {
 
     // Back to starting empty state
-    setActiveQuestion(0)
+    setActiveQuestion(-1)
     setSelectedAnswer('')
     setSelectedAnswerIndex(null)
     setShowResult(false)
@@ -73,22 +96,21 @@ export function Quiz() {
   }
 
 
-  return (
-    <div className="quiz-container">
+  if (!showResult) {
 
-      {!showResult ? (
+    return (
 
+      <div className="quiz-container">
         <div>
-
           <h1>Quiz</h1>
           <h2>{question}</h2>
-          <ul>
+          <ul className="logoPics">
             {choices.map((answer, index) => (
               <li
                 onClick={() => onAnswerSelected(answer, index)}
                 key={answer}
                 className={selectedAnswerIndex === index ? 'selected-answer' : null}>
-                <img src={answer} width="30px" />
+                <img src={answer} width="200px" />
               </li>
             ))}
           </ul>
@@ -96,27 +118,77 @@ export function Quiz() {
             {activeQuestion === questions.length - 1 ? 'Finish' : 'Next'}
           </button>
         </div>
-      ) : (
-        <div className="result">
-          <h3>Result</h3>
-          <p>
-            Total Question: <span>{questions.length}</span>
-          </p>
-          <p>
-            Total Score:<span> {(result.score / questions.length) * 100 + '%'}</span>
-          </p>
-          <p>
-            Correct Answers:<span> {result.correctAnswers}</span>
-          </p>
-          <p>
-            Wrong Answers:<span> {result.wrongAnswers}</span>
-          </p>
 
-          <button onClick={onTryAgain} >Try Again</button>
 
-        </div>
-      )}
+
+      </div>
+
+
+
+    )
+  }
+
+  const yourScore = (result.score / questions.length) * 100 + '%'
+  function scoreResult() {
+    if (yourScore >= 80) {
+      return (
+        <p>
+          <h3>{yourScore}</h3>
+          <h3>Great job! 😊</h3>
+        </p>
+      )
+    } else if (yourScore >= 50 && yourScore < 80) {
+
+      return (
+
+        <p>
+          <h3>{yourScore}</h3>
+          <h3>You could aim for a higher score tbh. ⭐ </h3>
+        </p>
+
+      )
+    } else {
+
+      return (
+
+        <p>
+          <h3>{yourScore}</h3>
+          <h3>Oh no. 😔 Better luck next time!</h3>
+        </p>
+
+      )
+
+    }
+  }
+
+
+  return (
+
+    <div className="quiz-container">
+
+      <div className="result">
+        <h3>Result</h3>
+        <p>
+          Total Questions: <span>{questions.length}</span>
+        </p>
+        <p>
+          Total Score:<span> {scoreResult()}
+
+          </span>
+        </p>
+        <p>
+          Correct Answers:<span> {result.correctAnswers}</span>
+        </p>
+        <p>
+          Wrong Answers:<span> {result.wrongAnswers}</span>
+        </p>
+
+        <button onClick={onTryAgain} >Try Again</button>
+
+      </div>
+
 
     </div>
+
   )
 }

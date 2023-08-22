@@ -8,6 +8,26 @@
   text-align: center;
 }
 
+.logoPics {
+
+  display: grid;
+  grid-template-columns: max-content max-content;
+  gap: 80px;
+  padding: 0;
+  justify-content: center;
+  margin: 60px;
+}
+
+/* Outside curly brackets is our selector. Classname and ID are 'special' names. Target className with "." */
+/* 'li' list tag inside logoPics className */
+
+.logoPics li {
+
+  list-style: none;
+
+
+
+}
 
 
 .App-logo {
