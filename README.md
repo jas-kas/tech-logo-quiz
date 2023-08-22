@@ -1,3 +1,7 @@
+
+<img src="https://media1.giphy.com/media/dNgK7Ws7y176U/giphy.gif?cid=6c09b952fj0jfb3h63lce2qhmymb3dtwg57lp0twxxuyqej0&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g" alt="Pusheen on laptop">
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
