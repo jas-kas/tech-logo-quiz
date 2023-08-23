@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/tech-logo-quiz/static/css/main.0d790f1c.css",
-    "main.js": "/tech-logo-quiz/static/js/main.f6dcac8c.js",
+    "main.css": "/tech-logo-quiz/static/css/main.4908d740.css",
+    "main.js": "/tech-logo-quiz/static/js/main.b243f6f6.js",
     "static/js/787.cb4acb1d.chunk.js": "/tech-logo-quiz/static/js/787.cb4acb1d.chunk.js",
     "static/media/pink-bg.jpg": "/tech-logo-quiz/static/media/pink-bg.eff103829f35dd021d29.jpg",
     "static/media/pusheen-laptop.gif": "/tech-logo-quiz/static/media/pusheen-laptop.f92ebb43cf8b48256718.gif",
@@ -23,12 +23,12 @@
     "static/media/vue-alt1.svg": "/tech-logo-quiz/static/media/vue-alt1.f2e5aaae3649d224e79b647f2dbd32bc.svg",
     "static/media/vue-alt2.svg": "/tech-logo-quiz/static/media/vue-alt2.9b33c93a64b871d5dfe94dc5fbf3d3fb.svg",
     "static/media/vue-original.svg": "/tech-logo-quiz/static/media/vue-original.347db4b04c63e28eff24341319f2c21d.svg",
-    "main.0d790f1c.css.map": "/tech-logo-quiz/static/css/main.0d790f1c.css.map",
-    "main.f6dcac8c.js.map": "/tech-logo-quiz/static/js/main.f6dcac8c.js.map",
+    "main.4908d740.css.map": "/tech-logo-quiz/static/css/main.4908d740.css.map",
+    "main.b243f6f6.js.map": "/tech-logo-quiz/static/js/main.b243f6f6.js.map",
     "787.cb4acb1d.chunk.js.map": "/tech-logo-quiz/static/js/787.cb4acb1d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0d790f1c.css",
-    "static/js/main.f6dcac8c.js"
+    "static/css/main.4908d740.css",
+    "static/js/main.b243f6f6.js"
   ]
 }
