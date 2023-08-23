@@ -1,5 +1,5 @@
 .quiz-container ul .selected-answer {
-  background: #ffd6ff;
+  background: #f5c7f5;
   border: 1px solid #800080;
   border-radius: 10px;
 }
@@ -8,9 +8,34 @@
   border: 1px solid #fff;
 }
 
+.quiz-container ul .unselected-answer:hover {
+
+  background: #fae1fa;
+  border: 1px solid #800080;
+  border-radius: 10px;
+
+}
+
 .quiz-container ul li {
   padding: 30px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+.quiz-heading {
+
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 80px;
+}
+
+.quiz-questions {
+
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 35px;
+
+}
+
+
+
 
 .App {
   text-align: center;
@@ -34,7 +59,7 @@
   border-radius: 10px;
   padding: 15px 32px;
   text-align: center;
-  font-size: 16px;
+  font-size: 30px;
 }
 
 .quizButton {
@@ -42,12 +67,20 @@
   border: none;
   border-radius: 10px;
   color: white;
-  padding: 15px 32px;
+  padding: 15px 40px;
   text-align: center;
-  font-size: 16px;
+  font-size: 30px;
+  margin: 60px;
   cursor: pointer;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+.quizButton:hover {
+
+  background-color: #844684;
+  color: white;
+
+}
 
 /* Outside curly brackets is our selector. Classname and ID are 'special' names. Target className with "." */
 /* 'li' list tag inside logoPics className */

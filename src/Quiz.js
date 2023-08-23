@@ -1,6 +1,7 @@
 // import React and quiz variable
 import React, { useState } from 'react'
 import { quiz } from './quizQuestions'
+import pusheenGif from './logos/pusheen-laptop.gif'
 
 // Quiz is Const in guide. Making it a function here instead
 
@@ -26,14 +27,24 @@ export function Quiz() {
   if (activeQuestion == -1) {
     return (
       <div className="quiz-container">
-        <h1>Quiz</h1>
+        <h1 className="quiz-heading">Tech Logo Quiz ✨</h1>
+
+        <p>
+          <img src={pusheenGif} />
+
+        </p>
+
+
+
+
+
+
         <button onClick={onClickStart} className="quizButton">
           {'Start Now'}
         </button>
+
       </div>
     )
-
-
   }
 
 
@@ -102,8 +113,8 @@ export function Quiz() {
 
       <div className="quiz-container">
         <div>
-          <h1>Quiz</h1>
-          <h2>{question}</h2>
+          <h1 className="quiz-heading">Tech Logo Quiz ✨</h1>
+          <h2 className="quiz-questions">{question}</h2>
           <ul className="logoPics">
             {choices.map((answer, index) => (
               <li
@@ -167,20 +178,12 @@ export function Quiz() {
     <div className="quiz-container">
 
       <div className="result">
-        <h3>Result</h3>
-        <p>
-          Total Questions: <span>{questions.length}</span>
-        </p>
+        <h3 className="result-heading">Result</h3>
+
         <p>
           Total Score:<span> {scoreResult()}
 
           </span>
-        </p>
-        <p>
-          Correct Answers:<span> {result.correctAnswers}</span>
-        </p>
-        <p>
-          Wrong Answers:<span> {result.wrongAnswers}</span>
         </p>
 
         <button onClick={onTryAgain} className="quizButton" >Try Again</button>
