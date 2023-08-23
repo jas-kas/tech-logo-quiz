@@ -43,6 +43,14 @@ html {
 }
 
 
+.result-heading {
+
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 40px;
+  margin-top: auto;
+  margin-bottom: auto;
+
+}
 
 .quiz-heading {
 
@@ -50,6 +58,14 @@ html {
   font-size: 40px;
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.total-score-heading {
+
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 28px;
+  margin-top: auto;
+
 }
 
 .quiz-questions {
@@ -61,7 +77,12 @@ html {
 
 }
 
+.your-score {
 
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 28px;
+  margin-top: auto;
+}
 
 .logoPics {
 

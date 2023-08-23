@@ -151,22 +151,31 @@ export function Quiz() {
     )
   }
 
-  const yourScore = (result.score / questions.length) * 100
+  const yourScore = Math.round((result.score / questions.length) * 100)
   function scoreResult() {
-    if (yourScore >= 80) {
+
+    if (yourScore == 100) {
       return (
-        <p>
-          <h3>{yourScore}%</h3>
-          <h3>Great job! 😊</h3>
+        <p className="your-score">
+          <h3 style={{ color: 'green' }}>{yourScore}%</h3>
+          <h3>Wow! A perfect score! 💯 </h3>
         </p>
       )
-    } else if (yourScore >= 50 && yourScore < 80) {
+
+    } else if (yourScore >= 75 && yourScore < 100) {
+      return (
+        <p className="your-score">
+          <h3 style={{ color: 'blue' }}>{yourScore}%</h3>
+          <h3>Great job! 😊 You get a virtual cupcake 🧁. </h3>
+        </p>
+      )
+    } else if (yourScore >= 50 && yourScore < 75) {
 
       return (
 
-        <p>
-          <h3>{yourScore}%</h3>
-          <h3>You could aim for a higher score tbh. ⭐ </h3>
+        <p className="your-score">
+          <h3 style={{ color: '#B59410' }}> {yourScore}%</h3>
+          <h3>You could aim for a higher score. ⭐ I believe in you. </h3>
         </p>
 
       )
@@ -174,8 +183,8 @@ export function Quiz() {
 
       return (
 
-        <p>
-          <h3>{yourScore}%</h3>
+        <p className="your-score">
+          <h3 style={{ color: 'red' }} >{yourScore}%</h3>
           <h3>Oh no. 😔 Better luck next time!</h3>
         </p>
 
@@ -190,15 +199,13 @@ export function Quiz() {
     <div className="quiz-container">
 
       <div className="result">
-        <h3 className="result-heading">Result</h3>
+        <h1 className="result-heading">Result ✨</h1>
 
-        <p>
-          Total Score:<span> {scoreResult()}
+        <h3 className="total-score-heading">
+          {scoreResult()}
+        </h3>
 
-          </span>
-        </p>
-
-        <button onClick={onTryAgain} className="quizButton" >Try Again</button>
+        <button onClick={onTryAgain} className="quizButton" >Play Again</button>
 
       </div>
 
