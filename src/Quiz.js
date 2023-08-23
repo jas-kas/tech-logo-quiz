@@ -1,5 +1,5 @@
 // import React and quiz variable
-import React, { useState } from 'react'
+import React, { useState, useReducer, useEffect } from 'react'
 import { quiz } from './quizQuestions'
 import pusheenGif from './logos/pusheen-laptop.gif'
 
@@ -17,6 +17,26 @@ export function Quiz() {
     wrongAnswers: 0,
   })
 
+  // questions (variable) is an array from quiz variable - see quizQuestions.js 
+  const questions = quiz.questions;
+
+  // questions[activeQuestion].choices;
+
+  const [randomizeChoice, dispatch] = useReducer(() => {
+
+    if (activeQuestion === -1) {
+
+      return []
+
+    } else if (!showResult) {
+
+      return questions[activeQuestion].choices.sort(() => (Math.random() > .5) ? 1 : -1);
+
+    }
+
+  }, [])
+
+  useEffect(() => dispatch(), [activeQuestion])
 
   function onClickStart() {
     setActiveQuestion(0)
@@ -34,11 +54,6 @@ export function Quiz() {
 
         </p>
 
-
-
-
-
-
         <button onClick={onClickStart} className="quizButton">
           {'Start Now'}
         </button>
@@ -48,10 +63,6 @@ export function Quiz() {
   }
 
 
-
-
-  // questions (variable) is an array from quiz variable - see quizQuestions.js 
-  const questions = quiz.questions;
 
   // grabbing question from questions array and picking the question at the default state
   const question = questions[activeQuestion].question;
@@ -106,6 +117,7 @@ export function Quiz() {
 
   }
 
+  // answers.sort(() => (Math.random() > .5) ? 1 : -1).map(...);
 
   if (!showResult) {
 
@@ -116,12 +128,12 @@ export function Quiz() {
           <h1 className="quiz-heading">Tech Logo Quiz ✨</h1>
           <h2 className="quiz-questions">{question}</h2>
           <ul className="logoPics">
-            {choices.map((answer, index) => (
+            {randomizeChoice.map((answer, index) => (
               <li
                 onClick={() => onAnswerSelected(answer, index)}
                 key={answer}
                 className={selectedAnswerIndex === index ? 'selected-answer' : 'unselected-answer'}>
-                <img src={answer} width="200px" />
+                <img src={answer} width="175px" />
               </li>
             ))}
           </ul>

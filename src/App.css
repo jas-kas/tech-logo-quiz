@@ -1,3 +1,11 @@
+html {
+  text-align: center;
+  background-image: url("./logos/pink-bg.jpg");
+
+}
+
+
+
 .quiz-container ul .selected-answer {
   background: #f5c7f5;
   border: 1px solid #800080;
@@ -6,11 +14,13 @@
 
 .quiz-container ul .unselected-answer {
   border: 1px solid #fff;
+  background: #fff;
+  border-radius: 10px;
 }
 
 .quiz-container ul .unselected-answer:hover {
 
-  background: #fae1fa;
+  background: #fae3fa;
   border: 1px solid #800080;
   border-radius: 10px;
 
@@ -21,34 +31,46 @@
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+.quiz-container {
+
+  background: #f4f1f4f5;
+  margin: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #f5c7f5;
+
+
+}
+
+
+
 .quiz-heading {
 
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 80px;
+  font-size: 40px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .quiz-questions {
 
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 35px;
+  font-size: 28px;
+  margin-top: auto;
+
 
 }
 
 
-
-
-.App {
-  text-align: center;
-}
 
 .logoPics {
 
   display: grid;
   grid-template-columns: max-content max-content;
-  gap: 80px;
+  gap: 30px;
   padding: 0;
   justify-content: center;
-  margin: 60px;
+  margin: 20px;
   cursor: pointer;
 }
 
@@ -57,7 +79,7 @@
   color: -internal-light-dark(rgba(16, 16, 16, 0.3), rgba(255, 255, 255, 0.3));
   border-color: -internal-light-dark(rgba(105, 104, 104, 0.3), rgba(195, 195, 195, 0.3));
   border-radius: 10px;
-  padding: 15px 32px;
+  padding: 10px 40px;
   text-align: center;
   font-size: 30px;
 }
@@ -67,10 +89,10 @@
   border: none;
   border-radius: 10px;
   color: white;
-  padding: 15px 40px;
+  padding: 10px 40px;
   text-align: center;
   font-size: 30px;
-  margin: 60px;
+  margin: 0px;
   cursor: pointer;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
