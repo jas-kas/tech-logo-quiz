@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import * as Sentry from "@sentry/browser";
 
+
 Sentry.init({
   dsn: "https://7778b23c197161567ad862ea6a69e0af@o19635.ingest.sentry.io/4505756244508672",
 
@@ -17,7 +18,22 @@ Sentry.init({
       maskAllText: false,
       blockAllMedia: false,
     }),
+
+
+    new Sentry.BrowserTracing({
+      // See docs for support of different versions of variation of react router
+      // https://docs.sentry.io/platforms/javascript/guides/react/configuration/integrations/react-router/
+
+    }),
+
   ],
+
+  // For finer control of sent transactions you can adjust this value, or
+  // use tracesSampler
+  tracesSampleRate: 1.0,
+
+  // Set `tracePropagationTargets` to control for which URLs distributed tracing should be enabled
+  tracePropagationTargets: ["localhost", /^https:\/\/yourserver\.io\/api/],
 
 });
 
