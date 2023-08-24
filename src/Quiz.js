@@ -1,5 +1,5 @@
 // import React and quiz variable
-import React, { useState, useReducer, useEffect } from 'react'
+import React, { useState, useReducer, useEffect, useRef } from 'react'
 import { quiz } from './quizQuestions'
 import pusheenGif from './logos/pusheen-laptop.gif'
 
@@ -16,6 +16,12 @@ export function Quiz() {
     correctAnswers: 0,
     wrongAnswers: 0,
   })
+
+  // My attempt at making a timer!
+
+
+
+
 
   // questions (variable) is an array from quiz variable - see quizQuestions.js 
   const questions = quiz.questions;
@@ -50,7 +56,7 @@ export function Quiz() {
         <h1 className="quiz-heading">Tech Logo Quiz ✨</h1>
 
         <p>
-          <img src={pusheenGif} />
+          <img className="pusheen" src={pusheenGif} />
 
         </p>
 
@@ -158,7 +164,7 @@ export function Quiz() {
       return (
         <p className="your-score">
           <h3 style={{ color: 'green' }}>{yourScore}%</h3>
-          <h3>Wow! A perfect score! 💯 </h3>
+          <h3>Wow! A perfect score! 💯 🥔🥔🥔🥔🥔 </h3>
         </p>
       )
 
@@ -166,7 +172,7 @@ export function Quiz() {
       return (
         <p className="your-score">
           <h3 style={{ color: 'blue' }}>{yourScore}%</h3>
-          <h3>Great job! 😊 You get a virtual cupcake 🧁. </h3>
+          <h3>Great job! 😊 You get a virtual cupcake. 🧁 </h3>
         </p>
       )
     } else if (yourScore >= 50 && yourScore < 75) {

@@ -29,6 +29,7 @@ html {
 .quiz-container ul li {
   padding: 30px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  cursor: pointer !important;
 }
 
 .quiz-container {
@@ -38,10 +39,17 @@ html {
   padding: 20px;
   border-radius: 10px;
   border: 2px solid #f5c7f5;
+  cursor: default;
 
 
 }
 
+.pusheen {
+
+  width: 100%;
+  max-width: 500px;
+
+}
 
 .result-heading {
 
@@ -92,8 +100,19 @@ html {
   padding: 0;
   justify-content: center;
   margin: 20px;
-  cursor: pointer;
+
 }
+
+.logoPics {
+
+  @media screen and (max-width: 600px) {
+    display: flex;
+    flex-wrap: wrap;
+
+
+  }
+}
+
 
 .disabledQuizButton {
   background-color: -internal-light-dark(rgba(239, 239, 239, 0.3), rgba(19, 1, 1, 0.3));
@@ -114,7 +133,7 @@ html {
   text-align: center;
   font-size: 30px;
   margin: 0px;
-  cursor: pointer;
+  cursor: pointer !important;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
