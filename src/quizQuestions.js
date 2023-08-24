@@ -48,12 +48,6 @@ import pyAlt2 from './logos/py-alt2.svg'
 import pyAlt3 from './logos/py-alt3.svg'
 import pyAltOG from './logos/py-original.svg'
 
-
-
-
-
-
-
 export const quiz = {
     totalQuestions: 11,
     perQuestionScore: 1,
