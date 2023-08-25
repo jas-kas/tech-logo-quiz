@@ -61,7 +61,7 @@ h3 {
 
 .result-message {
   color: #086788;
-  font-family: Comic Sans MS;
+  font-family: Comic Sans MS, apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -79,7 +79,7 @@ h3 {
 
 .result-heading {
   color: #086788;
-  font-family: Comic Sans MS;
+  font-family: Comic Sans MS, apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
@@ -100,14 +100,14 @@ h3 {
 }
 
 .total-score-heading {
-  font-family: Comic Sans MS;
+  font-family: Comic Sans MS, apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 28px;
   margin-top: auto;
 }
 
 .quiz-questions {
   color: #086788;
-  font-family: Comic Sans MS;
+  font-family: Comic Sans MS, apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -118,7 +118,7 @@ h3 {
 
 .your-score {
 
-  font-family: Comic Sans MS;
+  font-family: Comic Sans MS, apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 28px;
   margin-top: auto;
 }
@@ -155,7 +155,7 @@ h3 {
   border: 4px solid #E5616C;
   opacity: 0.5;
   color: #086788;
-  font-family: Comic Sans MS;
+  font-family: Comic Sans MS, apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -167,7 +167,7 @@ h3 {
   border: 4px solid #E3636E;
   background: #EA7B85;
   color: #FFF2D0;
-  font-family: Comic Sans MS;
+  font-family: Comic Sans MS, apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -236,7 +236,7 @@ h3 {
 
 .perfectScore {
   color: #06AED5;
-  font-family: Comic Sans MS;
+  font-family: Comic Sans MS, apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 64px;
   font-style: normal;
   font-weight: 700;
@@ -247,7 +247,7 @@ h3 {
 
 .okScore {
   color: #F1C70B;
-  font-family: Comic Sans MS;
+  font-family: Comic Sans MS, apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 64px;
   font-style: normal;
   font-weight: 700;
@@ -258,7 +258,7 @@ h3 {
 
 .badScore {
   color: #E3636E;
-  font-family: Comic Sans MS;
+  font-family: Comic Sans MS, apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 64px;
   font-style: normal;
   font-weight: 700;
