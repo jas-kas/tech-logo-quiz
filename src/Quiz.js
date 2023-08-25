@@ -52,14 +52,9 @@ export function Quiz() {
 
   if (activeQuestion == -1) {
     return (
-      <div className="quiz-container">
+      <div className="startScreen">
+        <img className="pusheen" src={pusheenGif} />
         <h1 className="quiz-heading">Tech Logo Quiz ✨</h1>
-
-        <p>
-          <img className="pusheen" src={pusheenGif} />
-
-        </p>
-
         <button onClick={onClickStart} className="quizButton">
           {'Start Now'}
         </button>
