@@ -46,9 +46,11 @@ ul li {
   cursor: pointer !important;
 }
 
+
+
 .pusheen {
   width: 100%;
-  max-width: 500px;
+  max-width: 300px;
 }
 
 h1 {
