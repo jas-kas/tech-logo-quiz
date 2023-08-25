@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/tech-logo-quiz/static/css/main.2deb9f0f.css",
-    "main.js": "/tech-logo-quiz/static/js/main.d9c6779c.js",
+    "main.css": "/tech-logo-quiz/static/css/main.b4f4890d.css",
+    "main.js": "/tech-logo-quiz/static/js/main.66a1b8a2.js",
     "static/js/787.cb4acb1d.chunk.js": "/tech-logo-quiz/static/js/787.cb4acb1d.chunk.js",
     "static/media/pusheen-laptop.gif": "/tech-logo-quiz/static/media/pusheen-laptop.f92ebb43cf8b48256718.gif",
     "static/media/deno-alt3.svg": "/tech-logo-quiz/static/media/deno-alt3.138809e24928ad8eb0d661e0f07c58e4.svg",
@@ -46,12 +46,12 @@
     "static/media/vercel-alt2.svg": "/tech-logo-quiz/static/media/vercel-alt2.40519b0c0ccbb28d1912c76a9f8620c3.svg",
     "static/media/vercel-alt1.svg": "/tech-logo-quiz/static/media/vercel-alt1.ecb166c468191fa6fc4c0b546f319cb3.svg",
     "static/media/vercel-original.svg": "/tech-logo-quiz/static/media/vercel-original.ce073e3c8786c13e94fd8fe56af10049.svg",
-    "main.2deb9f0f.css.map": "/tech-logo-quiz/static/css/main.2deb9f0f.css.map",
-    "main.d9c6779c.js.map": "/tech-logo-quiz/static/js/main.d9c6779c.js.map",
+    "main.b4f4890d.css.map": "/tech-logo-quiz/static/css/main.b4f4890d.css.map",
+    "main.66a1b8a2.js.map": "/tech-logo-quiz/static/js/main.66a1b8a2.js.map",
     "787.cb4acb1d.chunk.js.map": "/tech-logo-quiz/static/js/787.cb4acb1d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2deb9f0f.css",
-    "static/js/main.d9c6779c.js"
+    "static/css/main.b4f4890d.css",
+    "static/js/main.66a1b8a2.js"
   ]
 }
