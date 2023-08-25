@@ -1,10 +1,9 @@
 {
   "files": {
-    "main.css": "/tech-logo-quiz/static/css/main.894250c5.css",
-    "main.js": "/tech-logo-quiz/static/js/main.d4022443.js",
+    "main.css": "/tech-logo-quiz/static/css/main.7d18d663.css",
+    "main.js": "/tech-logo-quiz/static/js/main.c1c61f32.js",
     "static/js/787.cb4acb1d.chunk.js": "/tech-logo-quiz/static/js/787.cb4acb1d.chunk.js",
     "static/media/pusheen-laptop.gif": "/tech-logo-quiz/static/media/pusheen-laptop.f92ebb43cf8b48256718.gif",
-    "static/media/rust-alt2.svg": "/tech-logo-quiz/static/media/rust-alt2.092987d89f2fec3a3dae4147898dad59.svg",
     "static/media/deno-alt3.svg": "/tech-logo-quiz/static/media/deno-alt3.138809e24928ad8eb0d661e0f07c58e4.svg",
     "static/media/dd-alt1.svg": "/tech-logo-quiz/static/media/dd-alt1.dab4ac7b911d7ef2c8ed3fd152eb4728.svg",
     "static/media/deno-alt2.svg": "/tech-logo-quiz/static/media/deno-alt2.e383693f294662e017e34cb3f290e107.svg",
@@ -14,16 +13,9 @@
     "static/media/deno-alt1.svg": "/tech-logo-quiz/static/media/deno-alt1.992135152041b124e0bc3f308dc4b01b.svg",
     "static/media/dd-original.svg": "/tech-logo-quiz/static/media/dd-original.05c31b309e975de7f7e9470a168c7326.svg",
     "static/media/java-alt2.svg": "/tech-logo-quiz/static/media/java-alt2.b61100b97f25935da7f9a5311774b4c4.svg",
-    "static/media/pinia-alt2.svg": "/tech-logo-quiz/static/media/pinia-alt2.ab79aae424b2ce97ebc4d5515a4aeea3.svg",
-    "static/media/pinia-alt1.svg": "/tech-logo-quiz/static/media/pinia-alt1.f1468c9dec96d3f96fadbbb1fffdc42e.svg",
-    "static/media/pinia-original.svg": "/tech-logo-quiz/static/media/pinia-original.58366ebe2b57600eb555970d79683f87.svg",
     "static/media/java-alt1.svg": "/tech-logo-quiz/static/media/java-alt1.f3918f5aa1189b0484e931539b4a4f46.svg",
     "static/media/java-alt3.svg": "/tech-logo-quiz/static/media/java-alt3.1901ab5a809000ce06d01ede48e6cc10.svg",
     "static/media/java-original.svg": "/tech-logo-quiz/static/media/java-original.aff20ed8646b9771a32f964f157d7ead.svg",
-    "static/media/pinia-alt3.svg": "/tech-logo-quiz/static/media/pinia-alt3.de86f442b8431821bd620f291592bb4f.svg",
-    "static/media/rust-original.svg": "/tech-logo-quiz/static/media/rust-original.15ac454ef1e6509c4dabb9b2f95e043d.svg",
-    "static/media/rust-alt3.svg": "/tech-logo-quiz/static/media/rust-alt3.abf54fcf4fff89a844b1799b1e32301b.svg",
-    "static/media/rust-alt1.svg": "/tech-logo-quiz/static/media/rust-alt1.62dceff41843fa062a565e4a2111437a.svg",
     "static/media/gib-alt1.svg": "/tech-logo-quiz/static/media/gib-alt1.87a664a919d5171af0a83f2e771eeb12.svg",
     "static/media/py-alt2.svg": "/tech-logo-quiz/static/media/py-alt2.b65f7ae1e08ee1272aaa571156b45898.svg",
     "static/media/py-alt3.svg": "/tech-logo-quiz/static/media/py-alt3.ee84ea7dc55f4ecd03af0c751356d7f2.svg",
@@ -54,12 +46,12 @@
     "static/media/vercel-alt2.svg": "/tech-logo-quiz/static/media/vercel-alt2.40519b0c0ccbb28d1912c76a9f8620c3.svg",
     "static/media/vercel-alt1.svg": "/tech-logo-quiz/static/media/vercel-alt1.ecb166c468191fa6fc4c0b546f319cb3.svg",
     "static/media/vercel-original.svg": "/tech-logo-quiz/static/media/vercel-original.ce073e3c8786c13e94fd8fe56af10049.svg",
-    "main.894250c5.css.map": "/tech-logo-quiz/static/css/main.894250c5.css.map",
-    "main.d4022443.js.map": "/tech-logo-quiz/static/js/main.d4022443.js.map",
+    "main.7d18d663.css.map": "/tech-logo-quiz/static/css/main.7d18d663.css.map",
+    "main.c1c61f32.js.map": "/tech-logo-quiz/static/js/main.c1c61f32.js.map",
     "787.cb4acb1d.chunk.js.map": "/tech-logo-quiz/static/js/787.cb4acb1d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.894250c5.css",
-    "static/js/main.d4022443.js"
+    "static/css/main.7d18d663.css",
+    "static/js/main.c1c61f32.js"
   ]
 }
