@@ -54,7 +54,7 @@ export function Quiz() {
     return (
       <div className="startScreen">
         <img className="pusheen" src={pusheenGif} />
-        <h1 className="quiz-heading">Tech Logo Quiz ✨</h1>
+        <h1 className="quiz-heading">Tech Logo Quiz</h1>
         <button onClick={onClickStart} className="quizButton">
           {'Start Now'}
         </button>
@@ -124,31 +124,23 @@ export function Quiz() {
 
     return (
 
-      <div className="quiz-container">
-        <div>
-          <h1 className="quiz-heading">Tech Logo Quiz ✨</h1>
-          <h2 className="quiz-questions">{question}</h2>
-          <ul className="logoPics">
-            {randomizeChoice.map((answer, index) => (
-              <li
-                onClick={() => onAnswerSelected(answer, index)}
-                key={answer}
-                className={selectedAnswerIndex === index ? 'selected-answer' : 'unselected-answer'}>
-                <img src={answer} width="175px" />
-              </li>
-            ))}
-          </ul>
-          <button onClick={onClickNext} disabled={selectedAnswerIndex === null} className={selectedAnswerIndex === null ? "disabledQuizButton" : "quizButton"}>
-            {activeQuestion === questions.length - 1 ? 'Finish' : 'Next'}
-          </button>
-        </div>
-
-
-
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        <div className="quiz-heading">Tech Logo Quiz</div>
+        <div className="quiz-questions">{question}</div>
+        <ul className="logoPics">
+          {randomizeChoice.map((answer, index) => (
+            <li
+              onClick={() => onAnswerSelected(answer, index)}
+              key={answer}
+              className={selectedAnswerIndex === index ? 'selected-answer' : 'unselected-answer'}>
+              <img src={answer} width="175px" />
+            </li>
+          ))}
+        </ul>
+        <button style={{ width: '20%' }} onClick={onClickNext} disabled={selectedAnswerIndex === null} className={selectedAnswerIndex === null ? "disabledQuizButton" : "quizButton"}>
+          {activeQuestion === questions.length - 1 ? 'Finish' : 'Next'}
+        </button>
       </div>
-
-
-
     )
   }
 
@@ -158,16 +150,16 @@ export function Quiz() {
     if (yourScore == 100) {
       return (
         <p className="your-score">
-          <h3 style={{ color: 'green' }}>{yourScore}%</h3>
-          <h3>Wow! A perfect score! 💯 🥔🥔🥔🥔🥔 </h3>
+          <h3 className="perfectScore">{yourScore}%</h3>
+          <h3 className="result-message">Wow! A perfect score! 💯 🥔🥔🥔🥔🥔 </h3>
         </p>
       )
 
     } else if (yourScore >= 75 && yourScore < 100) {
       return (
         <p className="your-score">
-          <h3 style={{ color: 'blue' }}>{yourScore}%</h3>
-          <h3>Great job! 😊 You get a virtual cupcake. 🧁 </h3>
+          <h3 className="okScore">{yourScore}%</h3>
+          <h3 className="result-message">Great job! 😊 You get a virtual cupcake. 🧁 </h3>
         </p>
       )
     } else if (yourScore >= 50 && yourScore < 75) {
@@ -175,8 +167,8 @@ export function Quiz() {
       return (
 
         <p className="your-score">
-          <h3 style={{ color: '#B59410' }}> {yourScore}%</h3>
-          <h3>You could aim for a higher score. ⭐ I believe in you. </h3>
+          <h3 className="okScore"> {yourScore}%</h3>
+          <h3 className="result-message">You could aim for a higher score. ⭐ I believe in you. </h3>
         </p>
 
       )
@@ -185,8 +177,8 @@ export function Quiz() {
       return (
 
         <p className="your-score">
-          <h3 style={{ color: 'red' }} >{yourScore}%</h3>
-          <h3>Oh no. 😔 Better luck next time!</h3>
+          <h3 className="badScore">{yourScore}%</h3>
+          <h3 className="result-message">Oh no. 😔 Better luck next time!</h3>
         </p>
 
       )
@@ -200,7 +192,7 @@ export function Quiz() {
     <div className="quiz-container">
 
       <div className="result">
-        <h1 className="result-heading">Result ✨</h1>
+        <h1 className="result-heading">Result</h1>
 
         <h3 className="total-score-heading">
           {scoreResult()}
