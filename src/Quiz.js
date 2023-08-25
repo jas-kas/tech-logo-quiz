@@ -133,7 +133,7 @@ export function Quiz() {
               onClick={() => onAnswerSelected(answer, index)}
               key={answer}
               className={selectedAnswerIndex === index ? 'selected-answer' : 'unselected-answer'}>
-              <img src={answer} width="175px" />
+              <img src={answer} width="175px" height="175px" />
             </li>
           ))}
         </ul>
