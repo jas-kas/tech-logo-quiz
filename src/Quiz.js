@@ -17,12 +17,6 @@ export function Quiz() {
     wrongAnswers: 0,
   })
 
-  // My attempt at making a timer!
-
-
-
-
-
   // questions (variable) is an array from quiz variable - see quizQuestions.js 
   const questions = quiz.questions;
 
@@ -62,7 +56,6 @@ export function Quiz() {
       </div>
     )
   }
-
 
 
   // grabbing question from questions array and picking the question at the default state
@@ -168,7 +161,7 @@ export function Quiz() {
 
         <p className="your-score">
           <h3 className="okScore"> {yourScore}%</h3>
-          <h3 className="result-message">You could aim for a higher score. ⭐ I believe in you. </h3>
+          <h3 className="result-message">You did okay. You should try again! ⭐ </h3>
         </p>
 
       )

@@ -43,7 +43,6 @@ ul .unselected-answer:hover {
 
 ul li {
   padding: 30px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   cursor: pointer !important;
 }
 
@@ -101,7 +100,7 @@ h3 {
 }
 
 .total-score-heading {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: Comic Sans MS;
   font-size: 28px;
   margin-top: auto;
 }
@@ -119,7 +118,7 @@ h3 {
 
 .your-score {
 
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: Comic Sans MS;
   font-size: 28px;
   margin-top: auto;
 }
