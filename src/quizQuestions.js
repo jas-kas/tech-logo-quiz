@@ -73,7 +73,7 @@ export const quiz = {
         },
 
         {
-            question: 'Which is the real Java mascot logo?',
+            question: 'Which is the real Java mascot?',
             choices: [javaAlt1, javaAlt2, javaAlt3, javaAltOG],
             correctAnswer: javaAltOG,
         },
