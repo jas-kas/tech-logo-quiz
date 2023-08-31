@@ -48,7 +48,7 @@ export function Quiz() {
     return (
       <div className="startScreen">
         <img className="pusheen" src={pusheenGif} />
-        <h1 className="quiz-heading">Tech Logo Quiz</h1>
+        <h1 className="quiz-heading">Tech Logo Quiz (11 questions)</h1>
         <button onClick={onClickStart} className="quizButton">
           {'Start Now'}
         </button>

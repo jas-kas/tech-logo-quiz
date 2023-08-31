@@ -47,6 +47,21 @@ import pyAlt1 from './logos/py-alt1.svg'
 import pyAlt2 from './logos/py-alt2.svg'
 import pyAlt3 from './logos/py-alt3.svg'
 import pyAltOG from './logos/py-original.svg'
+import covAlt1 from './logos/codecov-alt1.svg'
+import covAlt2 from './logos/codecov-alt2.svg'
+import covAlt3 from './logos/codecov-alt3.svg'
+import covAltOG from './logos/codecov-original.svg'
+import reactAlt1 from './logos/react-alt1.svg'
+import reactAlt2 from './logos/react-alt2.svg'
+import reactAlt3 from './logos/react-alt3.svg'
+import reactAltOG from './logos/react-original.svg'
+import rubyAlt1 from './logos/ruby-alt1.svg'
+import rubyAlt2 from './logos/ruby-alt2.svg'
+import rubyAlt3 from './logos/ruby-alt3.svg'
+import rubyAltOG from './logos/ruby-original.svg'
+
+
+
 
 export const quiz = {
     perQuestionScore: 1,
@@ -57,10 +72,17 @@ export const quiz = {
             correctAnswer: denoAltOG,
         },
         {
-            question: 'Which is the real DataDog logo?',
-            choices: [ddAlt1, ddAltOG, ddAlt2, ddAlt3],
-            correctAnswer: ddAltOG
+            question: 'Which is the real Ruby logo?',
+            choices: [rubyAlt1, rubyAlt2, rubyAlt3, rubyAltOG],
+            correctAnswer: rubyAltOG,
         },
+
+
+        //{
+        //question: 'Which is the real DataDog logo?',
+        //choices: [ddAlt1, ddAltOG, ddAlt2, ddAlt3],
+        //correctAnswer: ddAltOG
+        //},
         //{
         //question: 'Which is the real pinia logo?',
         //choices: [piniaAlt1, piniaAlt2, piniaAltOG, piniaAlt3],
@@ -71,6 +93,7 @@ export const quiz = {
             choices: [vueAltOG, vueAlt1, vueAlt2, vueAlt3],
             correctAnswer: vueAltOG,
         },
+
 
         {
             question: 'Which is the real Java mascot?',
@@ -86,6 +109,13 @@ export const quiz = {
         },
 
         {
+            question: 'Which is the real Codecov logo?',
+            choices: [covAlt1, covAlt2, covAlt3, covAltOG],
+            correctAnswer: covAltOG,
+        },
+
+
+        {
             question: 'Which is the real Vercel logo?',
             choices: [vercelAlt1, vercelAlt2, vercelAltOG, vercelAlt3],
             correctAnswer: vercelAltOG,
@@ -98,10 +128,19 @@ export const quiz = {
         },
 
         {
-            question: 'Which is the real GibPotato logo?',
-            choices: [gibAlt1, gibAlt2, gibAlt3, gibAltOG],
-            correctAnswer: gibAltOG,
+            question: 'Which is the real React logo?',
+            choices: [reactAlt1, reactAlt2, reactAltOG, reactAlt3],
+            correctAnswer: reactAltOG,
         },
+
+
+
+
+        //{
+        //question: 'Which is the real GibPotato logo?',
+        //choices: [gibAlt1, gibAlt2, gibAlt3, gibAltOG],
+        //correctAnswer: gibAltOG,
+        //},
 
         {
             question: 'Which is the real GitHub logo?',
