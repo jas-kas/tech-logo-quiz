@@ -19,6 +19,10 @@ import vercelAlt1 from './logos/vercel-alt1.svg'
 import vercelAlt2 from './logos/vercel-alt2.svg'
 import vercelAlt3 from './logos/vercel-alt3.svg'
 import vercelAltOG from './logos/vercel-original.svg'
+import bunAltOG from './logos/bun-original.svg'
+import bunAlt1 from './logos/bun-alt1.svg'
+import bunAlt2 from './logos/bun-alt2.svg'
+import bunAlt3 from './logos/bun-alt3.svg'
 // import rustAlt1 from './logos/rust-alt1.svg' Dropping rust to make this 10 questions
 // import rustAlt2 from './logos/rust-alt2.svg'
 // import rustAlt3 from './logos/rust-alt3.svg'
@@ -101,6 +105,11 @@ export const quiz = {
             correctAnswer: javaAltOG,
         },
 
+        {
+            question: 'Which is the real Bun logo?',
+            choices: [bunAlt1, bunAlt2, bunAlt3, bunAltOG],
+            correctAnswer: bunAltOG,
+        },
 
         {
             question: 'Which is the real Lattice logo?',
