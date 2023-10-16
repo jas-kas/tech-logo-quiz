@@ -7,7 +7,7 @@ import * as Sentry from "@sentry/browser";
 
 
 Sentry.init({
-  dsn: "https://7778b23c197161567ad862ea6a69e0af@o19635.ingest.sentry.io/4505756244508672",
+  dsn: "https://9bb8efc3f63baf3255220a3c6e67ed4f@o447951.ingest.sentry.io/4506061332217856",
 
   // Session Replay
   replaysSessionSampleRate: 1.0, // This sets the sample rate at 10%. You may want to change it to 100% while in development and then sample at a lower rate in production.
